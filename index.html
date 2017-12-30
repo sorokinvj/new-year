@@ -1,0 +1,47 @@
+<html>
+
+<head>
+  <link href="css/soon.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+
+  <script type="text/javascript">
+    function soonCompleteCallback(){ newyear();};WebFontConfig={google:{families:['PT+Sans']}};(function(){var wf=document.createElement('script');wf.src=('https:'==document.location.protocol?'https':'http')+'://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';wf.type='text/javascript';wf.async='true';var s=document.getElementsByTagName('head')[0];s.appendChild(wf);})()
+  </script>
+  <style type="text/css">
+    #my-soon-counter {color:#98a3eb;}
+    #my-soon-counter {font-family:"PT Sans",sans-serif;font-weight:normal;font-style:normal;}
+    #my-soon-counter .soon-matrix-dot[data-state='1']:nth-child(1) {background-color:#a847ff;}
+    #my-soon-counter .soon-matrix-dot[data-state='1']:nth-child(2) {background-color:#a366f8;}
+    #my-soon-counter .soon-matrix-dot[data-state='1']:nth-child(3) {background-color:#9f86f0;}
+    #my-soon-counter .soon-matrix-dot[data-state='1']:nth-child(4) {background-color:#9aa5e9;}
+    #my-soon-counter .soon-matrix-dot[data-state='1']:nth-child(5) {background-color:#95c4e1;}
+    #my-soon-counter .soon-matrix-dot[data-state='0'] {background-color:#fafbfb;background-color:rgba(250,251,251,0);}
+  </style>
+
+  <div id="main">
+    <div class="soon" id="my-soon-counter"
+         data-due="2018-01-01T00:00"
+         data-event-complete="soonCompleteCallback"
+         data-layout="group spacey label-lowercase label-small"
+         data-scale-max="xxl"
+         data-scale-hide="none"
+         data-format="h,m,s"
+         data-face="matrix 5x7 dot-round animate-color"
+         data-singular="true"
+         data-labels-hours="час,часов"
+         data-labels-minutes="минута,минут"
+         data-labels-seconds="секунда,секунд">
+    </div>
+    <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+        <source src="charging_of_flying_reindeer.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <script src="js/soon.min.js"></script>
+</body>
+</html>
