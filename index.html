@@ -8,12 +8,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link href="css/soon.min.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-
-
+  <meta property="og:type"   content="website" />
+  <meta property="og:url"         content="http://newyearwithoutputin.com/index.html" />
+  <meta property="og:title"       content="Новый год без Путина">
+  <meta property="og:description" content="Только музыка, куранты, фейерверки и никакого президентского послания" />
+  <meta property="og:image"       content="http://newyearwithoutputin.com/no-PUTIN.jpg">
 </head>
 <body>
-
-
   <script type="text/javascript">
     function soonCompleteCallback(){ newyear();};WebFontConfig={google:{families:['PT+Sans']}};(function(){var wf=document.createElement('script');wf.src=('https:'==document.location.protocol?'https':'http')+'://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';wf.type='text/javascript';wf.async='true';var s=document.getElementsByTagName('head')[0];s.appendChild(wf);})()
   </script>
@@ -29,27 +30,46 @@
   </style>
 
   <div id="main" class="content">
-    <div class="soon" id="my-soon-counter"
-         data-due="2018-01-01T00:00"
-         data-event-complete="soonCompleteCallback"
-         data-layout="group spacey label-lowercase label-small"
-         data-scale-max="xxl"
-         data-scale-hide="none"
-         data-format="h,m,s"
-         data-face="matrix 5x7 dot-round animate-color"
-         data-singular="true"
-         data-labels-hours="ч"
-         data-labels-minutes="мин"
-         data-labels-seconds="сек">
-         <h1>До Нового года осталось</h1>
 
-    </div>
-    <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
-        <source src="charging_of_flying_reindeer.mp4" type="video/mp4">
+        <div class="soon" id="my-soon-counter"
+           data-due="2018-01-01T00:00"
+           data-event-complete="soonCompleteCallback"
+           data-layout="group spacey label-lowercase label-small"
+           data-scale-max="xxl"
+           data-scale-hide="none"
+           data-format="h,m,s"
+           data-face="matrix 5x7 dot-round animate-color"
+           data-singular="true"
+           data-labels-hours="ч"
+           data-labels-minutes="мин"
+           data-labels-seconds="сек">
+           <h1>До Нового года осталось</h1>
+        </div>
+
+        <div id='deezer_wrapper'>
+          <script>
+            (function(d, s, id) {
+                var js, djs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "https://e-cdns-files.dzcdn.net/js/widget/loader.js";
+                djs.parentNode.insertBefore(js, djs);
+              }
+              (document, "script", "deezer-widget-loader"));
+          </script>
+          <div class="deezer-widget-player" data-src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=100%&height=250&color=ae00eb&layout=&size=small&type=playlist&id=148610381&app_id=1" data-scrolling="no" data-frameborder="0" data-allowTransparency="true" data-width="100%" data-height="450"></div>
+        </div>
+
+    <video playsinline autoplay loop id="bgvid">
+      <source src="charging_of_flying_reindeer.mp4" type="video/mp4">
     </video>
   </div>
 
+
+  <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/soon.min.js"></script>
+  <script src="js/newyear.js"></script>
+
 
   <footer>
     <div class="authors">
