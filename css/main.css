@@ -11,7 +11,7 @@ body {
 
 footer {
   flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-  padding: 20px;
+  padding: 20px 2rem 20px 0;
   text-align: right;
 }
 
@@ -64,4 +64,9 @@ video#bgvid {
   float: right;
   margin: 4rem 2rem;
   opacity: 0.7;
+}
+
+a {
+  color:#ae00eb;
+  text-decoration: none;
 }
