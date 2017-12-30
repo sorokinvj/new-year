@@ -1,9 +1,33 @@
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  padding: 20px;
+  text-align: right;
+}
+
+.authors {
+  display: inline;
+  color: rgba(0,0,0,0.5);
+}
+
 #my-soon-counter {
     color: #98a3eb;
     position: absolute;
     left: 25%
 }
-
+#my-soon-counter h1 {
+  font-size: 3rem;
+}
 video#bgvid {
     position: fixed;
     top: 50%;
@@ -20,3 +44,14 @@ video#bgvid {
     background: url(polina.jpg) no-repeat;
     background-size: cover;
 }
+
+.footer {
+  flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  padding: 20px;
+}
+
+.soon-matrix .soon-matrix-dot {
+    display: table-cell!important;
+    width: .2em;
+    height: .2em;
+  }

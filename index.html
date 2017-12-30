@@ -23,7 +23,7 @@
     #my-soon-counter .soon-matrix-dot[data-state='0'] {background-color:#fafbfb;background-color:rgba(250,251,251,0);}
   </style>
 
-  <div id="main">
+  <div id="main" class="content">
     <div class="soon" id="my-soon-counter"
          data-due="2018-01-01T00:00"
          data-event-complete="soonCompleteCallback"
@@ -33,9 +33,11 @@
          data-format="h,m,s"
          data-face="matrix 5x7 dot-round animate-color"
          data-singular="true"
-         data-labels-hours="час,часов"
-         data-labels-minutes="минута,минут"
-         data-labels-seconds="секунда,секунд">
+         data-labels-hours="ч"
+         data-labels-minutes="мин"
+         data-labels-seconds="сек">
+         <h1>До Нового года осталось</h1>
+
     </div>
     <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
         <source src="charging_of_flying_reindeer.mp4" type="video/mp4">
@@ -43,5 +45,14 @@
   </div>
 
   <script src="js/soon.min.js"></script>
+
+  <footer>
+    <div class="authors">
+      design, coding – Vladislav Sorokin //
+    </div>
+    <div class="authors">
+      Animation – Oleg Beresnev
+    </div>
+  </footer>
 </body>
 </html>
