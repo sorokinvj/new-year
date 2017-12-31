@@ -81,3 +81,7 @@ h4, h5 {
 h5 {
   margin:5px 0;
 }
+
+.inactive {
+  display:none!important;
+}
